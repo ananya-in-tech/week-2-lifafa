@@ -1,0 +1,21 @@
+# Render Blueprint: free demo deploy. Gemma needs ~6 GB RAM (Render free has 512 MB), so the hosted demo
+# runs with AI and voice off: events, typed entries, people, return gifts, lena-dena search, thank-you notes
+# and CSV all work. Reading register photos (Gemma) and voice entry (Whisper) run locally.
+services:
+  - type: web
+    name: lifafa
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn lifafa.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: AI_ENABLED
+        value: "false"
+      - key: AI_WARMUP
+        value: "false"
+      - key: VOICE_ENABLED
+        value: "false"

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7a1f2b">
+  <title>Lifafa</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="top">
+    <a href="#/" class="brand"><img src="/icon.svg" alt="" width="28" height="28"> Lifafa</a>
+    <nav class="top-nav"><a href="#/">Events</a><a href="#/people">People</a></nav>
+    <form class="top-search" id="top-search" role="search">
+      <input type="search" name="q" placeholder="Search lena-dena… e.g. Sharma Kanpur" aria-label="Search all events">
+    </form>
+  </header>
+  <main id="app" aria-live="polite"></main>
+  <dialog id="dialog"><div id="dialog-body"></div></dialog>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
