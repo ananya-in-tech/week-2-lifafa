@@ -36,12 +36,6 @@ Render Deployed Link[https://lifafa-7dme.onrender.com]
 ![demo image](./demo/event_register.png)
 ![demo image](./demo/people_page.png)
 
-
-### Demo video:
-
-Demo video[./demo/Screen Recording 2026-10-19 182446.mp4]
-
-
 ## Code
 
 My Submission[https://github.com/ananya-in-tech/week-2-lifafa]
